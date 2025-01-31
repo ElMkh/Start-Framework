@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './footer.component.css'
 })
 export class FooterComponent {
-
+  openLink(url: string) {
+    window.open(url, '_blank', 'noopener,noreferrer');
+  }
 }
